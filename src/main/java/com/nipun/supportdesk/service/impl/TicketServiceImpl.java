@@ -51,7 +51,7 @@ public class TicketServiceImpl implements TicketService {
 
     @Override
     public List<TicketResponseDTO> getMyTickets(String username) {
-        return ticketRepository.findByCreatedByUsername(username)
+        return ticketRepository.findByCreatedByUserName(username)
                 .stream()
                 .map(this::mapToResponseDTO)
                 .collect(Collectors.toList());
