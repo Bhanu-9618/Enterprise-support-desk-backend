@@ -1,19 +1,39 @@
-# Enterprise Support Desk System - Backend 
+# 🚀 Enterprise Support Desk (Backend)
 
-This is a robust Backend system for an **Enterprise Ticketing Support Desk**, built using **Spring Boot** and **PostgreSQL**. It features Role-Based Access Control (RBAC), JWT Authentication, and an automated Audit Trail.
+The **Enterprise Support Desk Backend** is a high-performance, enterprise-grade ticketing engine built with the latest Java ecosystem. It is designed to manage the entire lifecycle of support requests with built-in auditing, system observability, and a robust RESTful architecture.
 
-## 🛠 Tech Stack
-* **Framework:** Spring Boot 3.x
-* **Language:** Java 17+
-* **Database:** PostgreSQL
-* **Security:** Spring Security & JWT
-* **ORM:** Spring Data JPA
-* **Build Tool:** Maven
-* **Monitoring:** Spring Boot Actuator
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Java 22 (Latest release)
+- **Framework:** Spring Boot 4.0.2 (Modern/Experimental version)
+- **Database:** PostgreSQL (Production-ready relational DB)
+- **ORM Layer:** Spring Data JPA / Hibernate
+- **Mapping:** ModelMapper 3.2.6
+- **Monitoring:** Spring Boot Actuator
+- **Utilities:** Lombok, Jakarta Bean Validation
+
+---
 
 ## ✨ Key Features
-- **JWT Authentication:** Secure login and token-based access.
-- **Role-Based Access Control (RBAC):** Different permissions for ADMIN and USER roles.
-- **Ticketing Workflow:** Create, update, and manage support tickets.
-- **Audit Logging:** Every critical action (status changes, user logins) is tracked.
-- **RESTful API:** Clean and documented endpoints for frontend integration.
+
+### 1. Advanced Ticket Lifecycle Management
+A complete engine for handling support requests from creation to resolution.
+- **Automated Validation:** Ensures data integrity at entry point.
+- **State Machine:** Discrete states: `OPEN`, `IN_PROGRESS`, and `RESOLVED`.
+- **Smart Defaulting:** New tickets are automatically initialized as `OPEN`.
+
+### 2. Automated Auditing & Observability
+Compliance-ready tracking for every system modification.
+- **Dynamic Logging:** Every ticket creation and status transition is recorded in a dedicated `AuditLog` table.
+- **Health Monitoring:** Real-time system metrics via Spring Boot Actuator.
+
+### 3. Clean Architecture & Data Integrity
+- **DTO Pattern:** Decouples internal entities from external API layers for security.
+- **Transactional Integrity:** Uses `@Transactional` to ensure ACID compliance during database operations.
+- **Relational Schema:** Optimized PostgreSQL schema for `Users`, `Tickets`, and `AuditLogs`.
+
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/enterprise-support-desk.git](https://github.com/YOUR_USERNAME/enterprise-support-desk.git)
+   cd enterprise-support-desk
