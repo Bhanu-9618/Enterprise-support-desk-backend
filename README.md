@@ -1,4 +1,4 @@
-# Enterprise Support Desk System - Backend 🚀
+# Enterprise Support Desk System - Backend 
 
 This is a robust Backend system for an **Enterprise Ticketing Support Desk**, built using **Spring Boot** and **PostgreSQL**. It features Role-Based Access Control (RBAC), JWT Authentication, and an automated Audit Trail.
 
