@@ -33,7 +33,3 @@ Compliance-ready tracking for every system modification.
 - **DTO Pattern:** Decouples internal entities from external API layers for security.
 - **Transactional Integrity:** Uses `@Transactional` to ensure ACID compliance during database operations.
 - **Relational Schema:** Optimized PostgreSQL schema for `Users`, `Tickets`, and `AuditLogs`.
-
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/enterprise-support-desk.git](https://github.com/YOUR_USERNAME/enterprise-support-desk.git)
-   cd enterprise-support-desk
